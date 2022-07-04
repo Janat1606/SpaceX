@@ -1,0 +1,450 @@
+{
+  "id": "f639e8a7-c5cd-47f9-aae4-3c78a1c5590c",
+  "version": "2.0",
+  "name": "SpaceX",
+  "url": "https://www.spacex.com",
+  "tests": [{
+    "id": "66ce48e6-ac32-4512-9ebf-114d45f45e3c",
+    "name": "SpaceX",
+    "commands": [{
+      "id": "97996340-dcee-419c-86db-e6e179a95cba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "134bed85-7c64-4657-8b3f-9f0e4b22f4c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edaa8c49-cad8-4ec8-ac54-579104c3e6fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navigation .nav-item:nth-child(1) > a",
+      "targets": [
+        ["css=#navigation .nav-item:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Falcon 9')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicles/falcon-9/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2b623b1-5540-44ac-b936-e30c9626d836",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6233e404-2048-4f3f-b5f3-90f99111888a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s path",
+      "targets": [
+        ["css=#gallery-next-s path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ccf5932-8978-4e72-8831-784cf308948f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s path",
+      "targets": [
+        ["css=#gallery-next-s path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "75de90d3-30bf-446c-a40a-a289cf318983",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s path",
+      "targets": [
+        ["css=#gallery-next-s path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae133da8-86ef-4491-9918-f49df3c690a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-dots",
+      "targets": [
+        ["css=.swiper-dots", "css:finder"],
+        ["xpath=//div[@id='controls']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65e7c8e9-bb98-48fc-8323-361152cc2e8b",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#gallery-prev-s > svg",
+      "targets": [
+        ["css=#gallery-prev-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "32ab8361-6d6f-48be-bb74-2982c8df01ac",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "273e7d63-ee27-475a-b5b7-125cac56481e",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1170d8c-7480-4a92-9fa5-587f84dc406b",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "908f17aa-59e3-4a4c-8de6-227c6c109628",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fce0d86a-2491-4bee-94af-1cc38916b2eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navigation .nav-item:nth-child(2) > a",
+      "targets": [
+        ["css=#navigation .nav-item:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Falcon Heavy')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicles/falcon-heavy/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ae31b7-bae2-479f-ab3d-7c0867e23128",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b74e656-4d1a-4c2f-9d3f-eaee5e6fdb7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "25a868d2-6fb6-4892-85ec-eb52a63d8338",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0d4520c-fca1-4ed4-9957-15258ce895b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "aea396af-be49-41aa-b33b-b75ee961a26c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd5a8ce-8106-4241-9261-62ab6e68beeb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navigation .nav-item:nth-child(3) > a",
+      "targets": [
+        ["css=#navigation .nav-item:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dragon')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicles/dragon/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4edbac0a-73a3-47b3-9e05-46cb4d52f5a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5be2a76-f0dd-46ad-b0f2-595e2a765b47",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s path",
+      "targets": [
+        ["css=#gallery-next-s path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d62f8378-b769-4f87-90a9-fdcaadbc5a85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-dots",
+      "targets": [
+        ["css=.swiper-dots", "css:finder"],
+        ["xpath=//div[@id='controls']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "208f735b-dd69-49b0-bf90-66fa2e4fc3ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navigation .nav-item:nth-child(4) > a",
+      "targets": [
+        ["css=#navigation .nav-item:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Starship')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicles/starship/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46bebf6-96f4-4038-8e3c-0157375b72a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61b1d4d-22a7-4645-8649-5d57f070cdb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "105d218d-737a-46a2-95f7-8d02d08e3551",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gallery-next-s > svg",
+      "targets": [
+        ["css=#gallery-next-s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ef6c855-8ffe-48d6-b8c7-d90a7f2913f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-dots",
+      "targets": [
+        ["css=.swiper-dots", "css:finder"],
+        ["xpath=//div[@id='controls']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cedd969d-415b-4c55-8dc5-721cce1c4ac4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navigation .nav-item:nth-child(5) > a",
+      "targets": [
+        ["css=#navigation .nav-item:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Human Spaceflight')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/human-spaceflight/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "252e8c01-f1dc-4e7a-80b1-8a714293bb0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navigation .nav-item:nth-child(6) > a",
+      "targets": [
+        ["css=#navigation .nav-item:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rideshare')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rideshare/')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "370857b4-b8da-4c14-9a4f-84038a10081e",
+      "comment": "",
+      "command": "click",
+      "target": "id=hamburger",
+      "targets": [
+        ["id=hamburger", "id"],
+        ["css=#hamburger", "css:finder"],
+        ["xpath=//button[@id='hamburger']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26023168-71d1-4cfc-84ed-172f07b03485",
+      "comment": "",
+      "command": "click",
+      "target": "id=bar2",
+      "targets": [
+        ["id=bar2", "id"],
+        ["css=#bar2", "css:finder"],
+        ["xpath=//div[@id='bar2']", "xpath:attributes"],
+        ["xpath=//button[@id='hamburger']/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1aa8d67-72f2-4aed-a1ec-b25136b24c7a",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=bar3",
+      "targets": [
+        ["id=bar3", "id"],
+        ["css=#bar3", "css:finder"],
+        ["xpath=//div[@id='bar3']", "xpath:attributes"],
+        ["xpath=//button[@id='hamburger']/div[3]", "xpath:idRelative"],
+        ["xpath=//button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f27b0a7-d193-46c8-8971-636875e25f01",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c39367-98f9-4f66-a67c-990c26af1895",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a29919d-ebc1-424b-87bd-c3a5d70bf44b",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=hamburger",
+      "targets": [
+        ["id=hamburger", "id"],
+        ["css=#hamburger", "css:finder"],
+        ["xpath=//button[@id='hamburger']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02005021-159d-4be6-8f81-1ed745321ca5",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=bar2",
+      "targets": [
+        ["id=bar2", "id"],
+        ["css=#bar2", "css:finder"],
+        ["xpath=//div[@id='bar2']", "xpath:attributes"],
+        ["xpath=//button[@id='hamburger']/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d6eae09-c3b9-4611-ae04-f7850ced83fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=hamburger",
+      "targets": [
+        ["id=hamburger", "id"],
+        ["css=#hamburger", "css:finder"],
+        ["xpath=//button[@id='hamburger']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbbe188b-849e-4010-afee-e6c3574dc9c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "389f0b9f-9968-43a5-ab5e-a0178d5125a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=bar2",
+      "targets": [
+        ["id=bar2", "id"],
+        ["css=#bar2", "css:finder"],
+        ["xpath=//div[@id='bar2']", "xpath:attributes"],
+        ["xpath=//button[@id='hamburger']/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eb800e0-1627-43dc-be93-044eb4339a91",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "395b5b7f-dd14-41fa-a75b-b165d4bc19c5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["66ce48e6-ac32-4512-9ebf-114d45f45e3c"]
+  }],
+  "urls": ["https://www.spacex.com/"],
+  "plugins": []
+}
