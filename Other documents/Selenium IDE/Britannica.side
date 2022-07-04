@@ -1,0 +1,598 @@
+{
+  "id": "3b7c9f73-a5fc-4c65-a64f-921175b70510",
+  "version": "2.0",
+  "name": "Britannica",
+  "url": "https://www.britannica.com",
+  "tests": [{
+    "id": "ba30827c-9f01-4e40-8683-eecc25aa2214",
+    "name": "Britannica script",
+    "commands": [{
+      "id": "74c1b75b-85e8-47c7-9fa7-354544857d23",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6ca7664-9c5b-4b03-9d95-44d94b28d0fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "610x587",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67593c23-f2a9-4b7d-b96b-bcd0f3f2b224",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Encyclopedia Britannica | Britannica",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d382906a-5a60-4751-ad5f-1b595ae22363",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.mx-10 > img",
+      "targets": [
+        ["css=.mx-10 > img", "css:finder"],
+        ["xpath=//img[@alt='Encyclopedia Britannica']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4cd426-d78c-43cf-8842-a31b6efba34d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Subscribe",
+      "targets": [
+        ["linkText=Subscribe", "linkText"],
+        ["css=.subscribe-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Subscribe')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div[4]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://premium.britannica.com/premium-membership/?utm_source=premium&utm_medium=global-nav&utm_campaign=evergreen')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Subscribe')]", "xpath:innerText"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "4f8249fd-c6ba-4950-ac49-1098375a6556",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Geography & Travel",
+      "targets": [
+        ["linkText=Geography & Travel", "linkText"],
+        ["css=.mr-20:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Geography & Travel')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/Geography-Travel')]", "xpath:href"],
+        ["xpath=//div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Geography & Travel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1ec1c0a-0cf6-49b5-9be1-33f677995ab5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de3d7edb-30c6-4335-9b46-779bf882a1f7",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "linkText=Entertainment & Pop Culture",
+      "targets": [
+        ["linkText=Entertainment & Pop Culture", "linkText"],
+        ["css=.mr-20:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Entertainment & Pop Culture')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/Entertainment-Pop-Culture')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entertainment & Pop Culture')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d9e850e-5b3b-47f2-beb9-22d7e169d7da",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.md-homepage-hero",
+      "targets": [
+        ["css=.md-homepage-hero", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1923592d-c667-4dc5-a524-0e0d9dfc3486",
+      "comment": "",
+      "command": "click",
+      "target": "css=.md-homepage-hero",
+      "targets": [
+        ["css=.md-homepage-hero", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2927954b-a7f2-405e-874b-cef9191b956a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Entertainment & Pop Culture",
+      "targets": [
+        ["linkText=Entertainment & Pop Culture", "linkText"],
+        ["css=.mr-20:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Entertainment & Pop Culture')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/Entertainment-Pop-Culture')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entertainment & Pop Culture')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e97feb-0897-4b6e-be91-a2ed7b2de2b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Actors",
+      "targets": [
+        ["linkText=Actors", "linkText"],
+        ["css=.mr-20:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Actors')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/Actors')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Actors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68be3382-8556-4fe6-9d81-48f0ad0e9e68",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,361)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b39c8df-8cd6-430f-a694-b2527cae4e5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BEL-CAM",
+      "targets": [
+        ["linkText=BEL-CAM", "linkText"],
+        ["css=.grid:nth-child(2) > .col-33:nth-child(2) .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(text(),'BEL-CAM')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/Actors/2')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BEL-CAM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ada599ef-7090-492a-8e8e-b03d552c380a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,477)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cda01992-10c7-4a69-8557-531031e0c91e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-100:nth-child(2) invertedtitle",
+      "targets": [
+        ["css=.col-100:nth-child(2) invertedtitle", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[2]/div[2]/div/div/a/invertedtitle", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/invertedtitle", "xpath:position"],
+        ["xpath=//invertedtitle[contains(.,'Belasco, David')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2568a745-f7ea-4041-be63-c0f9e4f14ef1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,305)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d3f2669-d5c6-447d-bc3b-f8f59978a2da",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,496)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7d1c35d-5da4-4556-8064-0788708334d9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,669)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61165b1d-c1b4-4ab6-8082-774f75e1c89e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.media-overlay-link > img",
+      "targets": [
+        ["css=.media-overlay-link > img", "css:finder"],
+        ["xpath=//img[@alt='Belasco, David']", "xpath:img"],
+        ["xpath=//div[@id='content']/div/div/article/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7e791b2-1b20-4bf0-9f24-88e5456df336",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,633)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ef6b8ba-702c-4ec3-9251-90c32c7389a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiSvgIcon-fontSizeLarge",
+      "targets": [
+        ["css=.MuiSvgIcon-fontSizeLarge", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3c8a72b-d734-43ea-8436-2d1b6640b240",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiSvgIcon-fontSizeLarge",
+      "targets": [
+        ["css=.MuiSvgIcon-fontSizeLarge", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3c82be-0de9-4f18-82c3-5b6fd19b035a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiSvgIcon-fontSizeLarge > path",
+      "targets": [
+        ["css=.MuiSvgIcon-fontSizeLarge > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "540e7a9d-251d-41c9-af2b-596ab2bd859b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Toolbar-module_close__31v8e path",
+      "targets": [
+        ["css=.Toolbar-module_close__31v8e path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "58306acb-81ab-4aea-b5e5-5989638654f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.breadcrumb-item:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/article/div/div[2]/div/div/div/div/nav/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[14]", "xpath:href"],
+        ["xpath=//nav/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1157e685-66d5-4b90-a4bf-7666d061e45d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.category-snap-slider > .next-button > .material-icons",
+      "targets": [
+        ["css=.category-snap-slider > .next-button > .material-icons", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9ab23b4-6d60-41b6-ac85-c88dd18bd2be",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "649ab85e-a438-4c43-8385-6d36b614a365",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Why Is LGBTQ Pride Celebrated in June?",
+      "targets": [
+        ["linkText=Why Is LGBTQ Pride Celebrated in June?", "linkText"],
+        ["css=.h2", "css:finder"],
+        ["xpath=//a[contains(text(),'Why Is LGBTQ Pride Celebrated in June?')]", "xpath:link"],
+        ["xpath=//div[@id='homepage-content']/div/div/div[2]/div/div[2]/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/story/why-is-pride-month-celebrated-in-june?utm_medium=mendel-homepage&utm_source=4up&utm_campaign=4up-1&utm_term=20220601')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Why Is LGBTQ Pride Celebrated in June?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d75de5b5-3cae-484f-836a-073e08d7d031",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,862)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a171d9e-5ab7-4c76-b770-8a39a16c17c9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1045)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "207e3b6a-ef03-4d3a-902f-9472ebd63e0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lifestyles & Social Issues",
+      "targets": [
+        ["linkText=Lifestyles & Social Issues", "linkText"],
+        ["css=.breadcrumb-item:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Lifestyles & Social Issues')]", "xpath:link"],
+        ["xpath=//main[@id='story-container']/div/div/div/div/nav/span[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/stories/demystified/Lifestyles-Social-Issues')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lifestyles & Social Issues')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d43df3d6-7d40-4abf-863e-32885844d7b4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cbbec1a-7e11-4140-86bb-80c5489b7132",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,384)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dba43b5c-bd3d-4d2d-81b5-decba8578532",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mx-10 > img",
+      "targets": [
+        ["css=.mx-10 > img", "css:finder"],
+        ["xpath=//img[@alt='Encyclopedia Britannica']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5ec7b5f-b27c-492a-90a5-b7aa79d56002",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,111)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e363eeb6-b721-45bf-a84b-5e6e01224b30",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,207)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac915c05-c74a-470f-8bc4-bcba3d706519",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lifestyles & Social Issues",
+      "targets": [
+        ["linkText=Lifestyles & Social Issues", "linkText"],
+        ["css=.link-white:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Lifestyles & Social Issues')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/Lifestyles-Social-Issues')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Lifestyles & Social Issues')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f47335b-8abd-4649-af7c-125e01af3f60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-pin:nth-child(1) .card-body",
+      "targets": [
+        ["css=.js-pin:nth-child(1) .card-body", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "287f7b6a-c320-4044-b5f3-bfa4c53b4d23",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "linkText=How is the U.S. Unemployment Rate Calculated?",
+      "targets": [
+        ["linkText=How is the U.S. Unemployment Rate Calculated?", "linkText"],
+        ["css=.qa-pinboard-items > .p-10:nth-child(1) .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(text(),'How is the U.S. Unemployment Rate Calculated?')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/story/how-is-the-us-unemployment-rate-calculated')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'How is the U.S. Unemployment Rate Calculated?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08b2c231-e001-4b92-bd6d-9d76a32d6fce",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.js-pin:nth-child(1) .card-body",
+      "targets": [
+        ["css=.js-pin:nth-child(1) .card-body", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b969b976-8c52-4d27-8ab2-42fa707618bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-pin:nth-child(1) .card-body",
+      "targets": [
+        ["css=.js-pin:nth-child(1) .card-body", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a7a915-19a4-4f1d-9216-04644fbeb07d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=How is the U.S. Unemployment Rate Calculated?",
+      "targets": [
+        ["linkText=How is the U.S. Unemployment Rate Calculated?", "linkText"],
+        ["css=.qa-pinboard-items > .p-10:nth-child(1) .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(text(),'How is the U.S. Unemployment Rate Calculated?')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/story/how-is-the-us-unemployment-rate-calculated')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'How is the U.S. Unemployment Rate Calculated?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c906045-a5c9-4478-8d31-fea858d78680",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,206)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5839bfe9-c27d-4fae-896b-24b8dd762822",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,507)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fb88557-7aa5-4cd5-8917-a3ac58ac4fea",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,575)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cd1ab35-bd81-465e-992c-67e7cbb4a203",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,872)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47587b73-5e96-4b2b-a302-506b73ce5d34",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,981)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afde8063-7ee4-4052-befc-36e5ba1893a6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1226)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "142d299f-aeb3-4ead-9f94-4d138f029254",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1470)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65a2fe52-4e9f-4e7f-a37e-0582995e3dfa",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1697)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f75a9e88-9a40-4249-8693-1932037bd2c3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1940)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5953021d-4b57-44ea-828d-a0897cbe075d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1925)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3346cc7c-b419-46c1-b25c-34dc876603e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.story-content:nth-child(1) > .md-article-container:nth-child(1) img:nth-child(1)",
+      "targets": [
+        ["css=.story-content:nth-child(1) > .md-article-container:nth-child(1) img:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='A sign at a gas station alerts customers that a business in Queens, which has one of the highest infection rates of coronavirus in the nation, is closed on April 3, 2020 in New York City. (covid-19, pandemic)']", "xpath:img"],
+        ["xpath=//main[@id='story-container']/div/div/div/div/div/div/div/article/figure/div/a/img", "xpath:idRelative"],
+        ["xpath=//figure/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6031deb-2805-4cd0-ad67-125dd5854f8b",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.story-content:nth-child(1) > .md-article-container .breadcrumb-item:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//main[@id='story-container']/div/div/div/div/nav/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[6]", "xpath:href"],
+        ["xpath=//nav/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed3071fe-c517-42f7-9b33-299eac4f5361",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.mx-10 > img",
+      "targets": [
+        ["css=.mx-10 > img", "css:finder"],
+        ["xpath=//img[@alt='Encyclopedia Britannica']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fef011a2-63a8-49d0-9daf-287cdd6b5ff3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8c070b5-890f-4683-9a6a-603d42cd7e54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mx-10 > img",
+      "targets": [
+        ["css=.mx-10 > img", "css:finder"],
+        ["xpath=//img[@alt='Encyclopedia Britannica']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4468712c-ba78-45ba-92ee-58ec0a599d2f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ba30827c-9f01-4e40-8683-eecc25aa2214"]
+  }],
+  "urls": ["https://www.britannica.com/"],
+  "plugins": []
+}

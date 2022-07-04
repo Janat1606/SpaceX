@@ -1,0 +1,456 @@
+{
+  "id": "b651e707-38b7-4842-8c08-e8119a05131e",
+  "version": "2.0",
+  "name": "Wikipedia 06/01",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "5e0e1c31-1bff-4f7f-abd5-c1b45340fd63",
+    "name": "Wikipedia 06/01",
+    "commands": [{
+      "id": "3fbe130e-0288-4795-9e43-261c72feaa5c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1755ac3-272d-4db2-b1af-10a7b7777725",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "610x587",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97e736f8-f1ba-47a0-999d-90b06f17deee",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#js-link-box-de > strong",
+      "targets": [
+        ["css=#js-link-box-de > strong", "css:finder"],
+        ["xpath=//a[@id='js-link-box-de']/strong", "xpath:idRelative"],
+        ["xpath=//div[5]/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Deutsch')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c7873e3-c609-41e1-bb39-a47db1c96019",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchLanguage",
+      "targets": [
+        ["id=searchLanguage", "id"],
+        ["css=#searchLanguage", "css:finder"],
+        ["xpath=//select[@id='searchLanguage']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Afrikaans\nPolski\nSlovenčina\nالعربية\nAsturianu\nAzərbaycanca\nБългарски\nBân-lâm-gú / Hō-ló-oē\nবাংলা\nБеларуская\nCatalà\nČeština\nCymraeg\nDansk\nDeutsch\nEesti\nΕλληνικά\nEnglish\nEspañol\nEsperanto\nEuskara\nفارسی\nFrançais\nGalego\n한국어\nՀայերեն\nहिन्दी\nHrvatski\nBahasa Indonesia\nItaliano\nעברית\nქართული\nLatina\nLatviešu\nLietuvių\nMagyar\nМакедонски\nمصرى\nBahasa Melayu\nBahaso Minangkabau\nNederlands\n日本語\nNorsk (bokmål)\nNorsk (nynorsk)\nНохчийн\nOʻzbekcha / Ўзбекча\nPortuguês\nҚазақша / Qazaqşa / قازاقشا\nRomână\nРусский\nSimple English\nSinugboanong Binisaya\nSlovenščina\nСрпски / Srpski\nSrpskohrvatski / Српскохрватски\nSuomi\nSvenska\nதமிழ்\nТатарча / Tatarça\nภาษาไทย\nТоҷикӣ\nتۆرکجه\nTürkçe\nУкраїнська\nاردو\nTiếng Việt\nVolapük\nWinaray\n粵語\n中文\nမြန်မာဘာသာ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fedce81-c679-4683-9efc-36075589b641",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f99ee4b1-b005-4a23-8ac2-106123aaad63",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "IT"
+    }, {
+      "id": "78a67a57-f6de-403d-8b6b-6ba31cb9bd0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-search-icon",
+      "targets": [
+        ["css=.svg-search-icon", "css:finder"],
+        ["xpath=//form[@id='search-form']/fieldset/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "155e6b44-0d06-4d82-b254-969b12e3087e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-wiki-logo",
+      "targets": [
+        ["css=.mw-wiki-logo", "css:finder"],
+        ["xpath=//div[@id='p-logo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Main_Page')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52c3dcfc-c22a-48c6-9369-7078921b2ddc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Don Dunstan",
+      "targets": [
+        ["linkText=Don Dunstan", "linkText"],
+        ["css=p:nth-child(2) > b:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Don Dunstan')]", "xpath:link"],
+        ["xpath=//div[@id='mp-tfa']/p/b/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Don_Dunstan')]", "xpath:href"],
+        ["xpath=//b/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Don Dunstan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "133a7093-6381-494f-b9a2-ca5142d5d2c8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb949390-24d9-4cf2-ba54-8156708557e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.infobox-image img",
+      "targets": [
+        ["css=.infobox-image img", "css:finder"],
+        ["xpath=//img[@alt='Don Dunstan 1968 crop.jpg']", "xpath:img"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[2]/td/a/img", "xpath:idRelative"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95fb9a74-9afe-4e07-9487-9b7c745a6ee0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d1eaa9-cf5c-4e4f-a332-853835007b66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9caa11b8-4371-4e13-a9fd-368ec1267f38",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5346855d-c778-4910-902f-6a088a471ead",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7f61587-1e61-4a55-a420-410fab5fa8d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9e90baf-c5a5-4d67-b94c-68d23652cf8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99991c8a-0991-48e4-894a-cb9cc7c87492",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fb23cfb-bfaa-4a8b-8730-08a3e769c2f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-next-image",
+      "targets": [
+        ["css=.mw-mmv-next-image", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5efd010a-bbfa-450b-82a2-bc7ed18192d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9988b1e4-942e-4ba8-94b0-c072c150e3da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9a22fee-ff79-44fc-8221-89cfd05f12e0",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac32e8a-59e2-4012-ad88-637fa6ed3ea6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32dd3332-e7da-4d66-8eec-be6e5bb41df2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f89bb329-77a8-4edb-8ae2-b5486a702fa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5467b442-bb94-455b-8d3a-61c891e55f97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-prev-image",
+      "targets": [
+        ["css=.mw-mmv-prev-image", "css:finder"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17756a58-20d6-402c-b534-11ff51fc1d76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-mmv-close",
+      "targets": [
+        ["css=.mw-mmv-close", "css:finder"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d0e9923-6404-47d7-8027-9ef99c34ca0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-wiki-logo",
+      "targets": [
+        ["css=.mw-wiki-logo", "css:finder"],
+        ["xpath=//div[@id='p-logo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Main_Page')]", "xpath:href"],
+        ["xpath=//div[4]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85c102c0-30fa-40dc-964a-58ffad4f596c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ca-talk span",
+      "targets": [
+        ["css=#ca-talk span", "css:finder"],
+        ["xpath=//li[@id='ca-talk']/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/nav/div/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cf73388-d9a0-438e-a5dd-e746f4145c18",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#ca-talk > a",
+      "targets": [
+        ["css=#ca-talk > a", "css:finder"],
+        ["xpath=//li[@id='ca-talk']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/wiki/Talk:Main_Page')])[206]", "xpath:href"],
+        ["xpath=//div[4]/div/div/nav/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60272be3-e64f-4983-8383-8afa670f3e04",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#ca-talk > a",
+      "targets": [
+        ["css=#ca-talk > a", "css:finder"],
+        ["xpath=//li[@id='ca-talk']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/wiki/Talk:Main_Page')])[206]", "xpath:href"],
+        ["xpath=//div[4]/div/div/nav/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d918a5-fe70-46a4-b743-b8abe4e41112",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ca-nstab-main span",
+      "targets": [
+        ["css=#ca-nstab-main span", "css:finder"],
+        ["xpath=//li[@id='ca-nstab-main']/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/nav/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5f0c5f1-2c02-423e-b30f-369d298d8dc5",
+      "comment": "",
+      "command": "click",
+      "target": "id=p-cactions-checkbox",
+      "targets": [
+        ["id=p-cactions-checkbox", "id"],
+        ["css=#p-cactions-checkbox", "css:finder"],
+        ["xpath=//input[@id='p-cactions-checkbox']", "xpath:attributes"],
+        ["xpath=//nav[@id='p-cactions']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/nav[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "632a028e-77bf-4a31-a8bd-7eadfb510b9a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#ca-talk span",
+      "targets": [
+        ["css=#ca-talk span", "css:finder"],
+        ["xpath=//li[@id='ca-talk']/a/span", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/nav/div/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "8ac72789-fe49-478a-82d3-23bcf93ebf8b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=In_the_news",
+      "targets": [
+        ["id=In_the_news", "id"],
+        ["css=#In_the_news", "css:finder"],
+        ["xpath=//span[@id='In_the_news']", "xpath:attributes"],
+        ["xpath=//h2[@id='mp-itn-h2']/span", "xpath:idRelative"],
+        ["xpath=//td[3]/h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'In the news')]", "xpath:innerText"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "e3de58d4-cc61-41d3-9fcb-d5d1646261e4",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Wikipedia, the free encyclopedia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ef8a28e-2683-4364-a57e-4682081c416e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=mp-topbanner",
+      "targets": [
+        ["id=mp-topbanner", "id"],
+        ["css=#mp-topbanner", "css:finder"],
+        ["xpath=//div[@id='mp-topbanner']", "xpath:attributes"],
+        ["xpath=//div[@id='mw-content-text']/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "cc0a3a85-e1c8-47f5-b0cf-242ea9b5e32e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#ca-view span",
+      "targets": [
+        ["css=#ca-view span", "css:finder"],
+        ["xpath=//li[@id='ca-view']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/nav/div/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Read')]", "xpath:innerText"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "39273042-07f2-4350-965c-ad1ae5ec55df",
+      "comment": "",
+      "command": "click",
+      "target": "id=p-cactions-checkbox",
+      "targets": [
+        ["id=p-cactions-checkbox", "id"],
+        ["css=#p-cactions-checkbox", "css:finder"],
+        ["xpath=//input[@id='p-cactions-checkbox']", "xpath:attributes"],
+        ["xpath=//nav[@id='p-cactions']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/nav[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bc6ec115-e4c9-473f-8b09-37a2a6dc96b2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e0e1c31-1bff-4f7f-abd5-c1b45340fd63"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}

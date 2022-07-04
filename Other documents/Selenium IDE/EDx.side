@@ -1,0 +1,435 @@
+{
+  "id": "76032e95-c8da-4532-814f-073b23c66fac",
+  "version": "2.0",
+  "name": "EDX",
+  "url": "https://www.edx.org",
+  "tests": [{
+    "id": "a4eec97b-1e10-4615-bc5e-fc71a8d95af6",
+    "name": "Edx",
+    "commands": [{
+      "id": "e013e459-3815-4f89-9af3-104219caf69e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22a33112-fcc4-440f-a969-5b2cc11448f1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f6adfca-2e64-487d-8ffc-dd7ff0dcd792",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Schools & Partners",
+      "targets": [
+        ["linkText=Schools & Partners", "linkText"],
+        ["css=.menu-link:nth-child(8) > .menu-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Schools & Partners')])[2]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/schools-partners')])[2]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4193f37e-82b4-437a-b3af-2cbc2e80d90b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Programs & Degrees",
+      "targets": [
+        ["linkText=Programs & Degrees", "linkText"],
+        ["css=.is-open", "css:finder"],
+        ["xpath=//a[contains(text(),'Programs & Degrees')]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/?tab=program')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Programs & Degrees')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf281a90-aaed-4085-9693-859b8f80a873",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=.is-open", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/?tab=course')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9d0b6b2-288f-4a00-8c47-24b0c1236ee1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.sign-in-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign In')])[2]", "xpath:link"],
+        ["xpath=//div[@id='page']/header/div/div[4]/div[3]/nav/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://courses.edx.org/login')])[2]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "b443b958-20e9-4614-ab6e-9051679d7343",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.skew-back",
+      "targets": [
+        ["css=.skew-back", "css:finder"],
+        ["xpath=//div[@id='page']/header/div/div[4]/div[3]/nav/a[2]/div", "xpath:idRelative"],
+        ["xpath=//a[2]/div", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "5a264047-712d-4517-aa0a-e65d0a3d451a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,15)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08a61d73-5b5f-42d0-9e81-bcfee1c051f8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,20)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9d7ff1d-2fae-436b-b532-d6671c184a0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.line-of-business-tab:nth-child(4)",
+      "targets": [
+        ["css=.line-of-business-tab:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div[3]/div/div/div/div/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Boot Camps')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd831a13-9946-411f-bcd2-e610d7cc311c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.line-of-business-tab:nth-child(3)",
+      "targets": [
+        ["css=.line-of-business-tab:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div[3]/div/div/div/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "255fd1da-512f-43f1-bfd8-b4f46feb82c5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,846.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7b3ea4b-49c2-49f2-9fca-4747a43b68bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.line-of-business-tab:nth-child(2)",
+      "targets": [
+        ["css=.line-of-business-tab:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div[3]/div/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b5f807-deec-45cb-a702-9cdd74bf9be8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.line-of-business-tab:nth-child(2)",
+      "targets": [
+        ["css=.line-of-business-tab:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div[3]/div/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "691f9a05-122b-4a82-9a4e-9ef5bc976f44",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.line-of-business-tab:nth-child(2)",
+      "targets": [
+        ["css=.line-of-business-tab:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div[3]/div/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "931eeba1-99cf-41e3-a0ff-5412e233dc98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.line-of-business-tab:nth-child(1)",
+      "targets": [
+        ["css=.line-of-business-tab:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//main[@id='main-content']/div/div[3]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Executive Education')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e46fa32-ff63-440e-bab8-f74822866b33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(2) .mb-0",
+      "targets": [
+        ["css=.col-12:nth-child(2) .mb-0", "css:finder"],
+        ["xpath=//main[@id='main-content']/div/div[9]/div/div/div[2]/div/a/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Language')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "821cdf44-8d3f-46fb-9887-566b89fda08e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Schools & Partners",
+      "targets": [
+        ["linkText=Schools & Partners", "linkText"],
+        ["css=.menu-link:nth-child(8) > .menu-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Schools & Partners')])[2]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/schools-partners')])[2]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1747b6eb-cabb-4007-a8c5-6e6a60b7676c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Schools & Partners",
+      "targets": [
+        ["linkText=Schools & Partners", "linkText"],
+        ["css=.menu-link:nth-child(8) > .menu-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Schools & Partners')])[2]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/schools-partners')])[2]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f62a05d9-4d6f-4c7c-b90e-fd4570cc5298",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Programs & Degrees",
+      "targets": [
+        ["linkText=Programs & Degrees", "linkText"],
+        ["css=.menu-link:nth-child(5) > .menu-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Programs & Degrees')]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/?tab=program')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Programs & Degrees')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea939b3b-40f4-4a07-bce9-caafedfa4ccd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Programs & Degrees",
+      "targets": [
+        ["linkText=Programs & Degrees", "linkText"],
+        ["css=.is-open", "css:finder"],
+        ["xpath=//a[contains(text(),'Programs & Degrees')]", "xpath:link"],
+        ["xpath=//div[@id='primary-menu-bar']/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/?tab=program')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Programs & Degrees')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "761ec0b2-3636-4673-85b8-b60ef77f1aec",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=pgn-searchfield-input-698",
+      "targets": [
+        ["id=pgn-searchfield-input-698", "id"],
+        ["name=searchfield-input", "name"],
+        ["css=#pgn-searchfield-input-698", "css:finder"],
+        ["xpath=//input[@id='pgn-searchfield-input-698']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search-desktop-search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f777c723-c552-473e-bae2-681deae79029",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Charter Members",
+      "targets": [
+        ["linkText=Charter Members", "linkText"],
+        ["css=.list-inline-item:nth-child(1) > .link", "css:finder"],
+        ["xpath=//a[contains(text(),'Charter Members')]", "xpath:link"],
+        ["xpath=//main[@id='main-content']/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#charter-members')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Charter Members')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b14eb9-e13e-4a49-8b4e-3f5b3e825a21",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Members",
+      "targets": [
+        ["linkText=Members", "linkText"],
+        ["css=.list-inline-item:nth-child(2) > .link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Members')])[2]", "xpath:link"],
+        ["xpath=//main[@id='main-content']/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#members')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d7e2cd-2c8b-42bd-a60d-195ad96dfe7e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=More About Partnering",
+      "targets": [
+        ["linkText=More About Partnering", "linkText"],
+        ["css=.list-inline-item:nth-child(3) > .link", "css:finder"],
+        ["xpath=//a[contains(text(),'More About Partnering')]", "xpath:link"],
+        ["xpath=//main[@id='main-content']/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#membership')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'More About Partnering')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3848098-d5a0-405b-8c54-5d8bca5eb599",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-md-4:nth-child(3) > .list-label",
+      "targets": [
+        ["css=.col-md-4:nth-child(3) > .list-label", "css:finder"],
+        ["xpath=//main[@id='main-content']/div/div/div/div/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'100 Million +')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f173ee6-9374-43f5-babc-5b9a061b85f0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-md-4:nth-child(2) > .list-label",
+      "targets": [
+        ["css=.col-md-4:nth-child(2) > .list-label", "css:finder"],
+        ["xpath=//main[@id='main-content']/div/div/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'34 Million +')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef84cc2e-e7e1-4985-958b-d3a3d3520801",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.col-md-4:nth-child(1) > .list-label",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) > .list-label", "css:finder"],
+        ["xpath=//main[@id='main-content']/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'2,800 +')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e6c89ea-57eb-4736-9ca2-46d9a974eecb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.site-logo",
+      "targets": [
+        ["css=.site-logo", "css:finder"],
+        ["xpath=//img[@alt='edX Online']", "xpath:img"],
+        ["xpath=//div[@id='logo']/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8797709-09a0-4265-a67c-c8720ff98837",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.sign-in-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign In')])[2]", "xpath:link"],
+        ["xpath=//div[@id='page']/header/div/div[4]/div[3]/nav/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://courses.edx.org/login')])[2]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c5a14f8-0d6a-4594-b7b2-a633bdeb4cf4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=sign-in",
+      "targets": [
+        ["id=sign-in", "id"],
+        ["name=sign-in", "name"],
+        ["css=#sign-in", "css:finder"],
+        ["xpath=//button[@id='sign-in']", "xpath:attributes"],
+        ["xpath=//form[@id='sign-in-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9298807d-42ec-4cf9-b2f0-83969ae87717",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=forgot-password",
+      "targets": [
+        ["id=forgot-password", "id"],
+        ["linkText=Forgot password", "linkText"],
+        ["name=forgot-password", "name"],
+        ["css=#forgot-password", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password')]", "xpath:link"],
+        ["xpath=//a[@id='forgot-password']", "xpath:attributes"],
+        ["xpath=//form[@id='sign-in-form']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/reset')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bfa8f62-536f-4037-8416-d64831b51079",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=oa2-apple-id",
+      "targets": [
+        ["id=oa2-apple-id", "id"],
+        ["css=#oa2-apple-id", "css:finder"],
+        ["xpath=//button[@id='oa2-apple-id']", "xpath:attributes"],
+        ["xpath=//form[@id='sign-in-form']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0a383970-b3ec-4039-8764-0ee3ed2dc0ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a4eec97b-1e10-4615-bc5e-fc71a8d95af6"]
+  }],
+  "urls": ["https://www.edx.org/"],
+  "plugins": []
+}
