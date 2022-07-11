@@ -1,0 +1,172 @@
+{
+  "id": "599828d3-2f7e-4620-b044-36070c867cc4",
+  "version": "2.0",
+  "name": "Space X Automated",
+  "url": "https://www.spacex.com",
+  "tests": [{
+    "id": "5e7468ba-b10a-42ed-9166-0435889082b0",
+    "name": "Space X ",
+    "commands": [{
+      "id": "6141ec36-6974-412c-b9c2-878b28d0504a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acf4f9e1-6833-4d46-813c-c45baa7e26a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fc6da86-2ac5-455b-9672-cf180f46393f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SHOP",
+      "targets": [
+        ["linkText=SHOP", "linkText"],
+        ["css=#navigation-right a", "css:finder"],
+        ["xpath=//a[contains(text(),'SHOP')]", "xpath:link"],
+        ["xpath=//div[@id='navigation-right']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.spacex.com/')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SHOP')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6047",
+      "windowTimeout": 2000
+    }, {
+      "id": "cd878162-e149-4a4d-a516-bdc0d49dfd08",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48be50a3-a776-425f-b00d-751a6ebf8ba4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6047}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7008068-ef99-4507-817f-5e7e31f769db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-expanded > .Heading",
+      "targets": [
+        ["css=.is-expanded > .Heading", "css:finder"],
+        ["xpath=//header[@id='section-header']/div/div[2]/nav/ul/li[3]/button", "xpath:idRelative"],
+        ["xpath=//li[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c153b67-ee94-4436-ba2c-c3c0faabf778",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Grid__Cell:nth-child(1) .ProductItem__Image:nth-child(2)",
+      "targets": [
+        ["css=.Grid__Cell:nth-child(1) .ProductItem__Image:nth-child(2)", "css:finder"],
+        ["xpath=(//img[@alt=\"Kid's SpaceX Spacesuit Onesie\"])[2]", "xpath:img"],
+        ["xpath=//div[@id='block-1565672775541-0']/div/ul/li/div/div/a/div/img[2]", "xpath:idRelative"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25e10ec1-fdf4-4a82-a467-08cd37780e6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProductForm__AddToCart",
+      "targets": [
+        ["css=.ProductForm__AddToCart", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form_4790840361039']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c928ab9-72ff-4dc7-a4c5-fdc924e9a541",
+      "comment": "",
+      "command": "click",
+      "target": "name=checkout",
+      "targets": [
+        ["name=checkout", "name"],
+        ["css=.Cart__Checkout", "css:finder"],
+        ["xpath=//button[@name='checkout']", "xpath:attributes"],
+        ["xpath=//div[@id='shopify-section-cart-template']/section/div/div/form/footer/div/button", "xpath:idRelative"],
+        ["xpath=//footer/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'CHECKOUT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0e24683-9a88-4f9a-a4a7-d50dc0f62717",
+      "comment": "",
+      "command": "click",
+      "target": "css=.CartItem__Actions:nth-child(1) > .CartItem__Remove",
+      "targets": [
+        ["css=.CartItem__Actions:nth-child(1) > .CartItem__Remove", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove')]", "xpath:link"],
+        ["xpath=//div[@id='shopify-section-cart-template']/section/div/div/form/table/tbody/tr/td[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart/change?quantity=0&id=32599227629647:67b775ca9c6f82cbb4b5cbd1e931b5f9')])[2]", "xpath:href"],
+        ["xpath=//td[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb71e64c-a5d9-4443-8201-62bc98f3019f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-expanded:nth-child(1)",
+      "targets": [
+        ["css=.is-expanded:nth-child(1)", "css:finder"],
+        ["xpath=//header[@id='section-header']/div/div[2]/nav/ul/li[4]/button", "xpath:idRelative"],
+        ["xpath=//li[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2398fc7-206d-43b9-aa7a-8bb9a9c8f948",
+      "comment": "",
+      "command": "click",
+      "target": "css=.HorizontalList__Item:nth-child(4) > .Heading",
+      "targets": [
+        ["css=.HorizontalList__Item:nth-child(4) > .Heading", "css:finder"],
+        ["xpath=//header[@id='section-header']/div/div[2]/nav/ul/li[4]/button", "xpath:idRelative"],
+        ["xpath=//li[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15a0642f-27f7-458d-92f4-1bf9924a9bb8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3285eb19-47f7-45f8-bdf5-4423138ddcc7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35629b96-e1e9-428b-a6c5-1edce8acfeb4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "84908fd3-6271-4687-a70e-05221cbe20c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e7468ba-b10a-42ed-9166-0435889082b0"]
+  }],
+  "urls": ["https://www.spacex.com/"],
+  "plugins": []
+}

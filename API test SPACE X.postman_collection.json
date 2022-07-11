@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "122b717e-ec86-488d-8f70-c5a65cc1d172",
+		"name": "SPACE X",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21594560"
+	},
+	"item": [
+		{
+			"name": "Add new address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "customer_id: 5697840971855\ncustomer_id_signature: bebe35c92ad0a3227032135e400064140c1c72e24cd7501f3eced28828ed74e9\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shop.spacex.com/apps/locksmith/ping?customer_id=5697840971855&customer_id_signature=bebe35c92ad0a3227032135e400064140c1c72e24cd7501f3eced28828ed74e9",
+					"protocol": "https",
+					"host": [
+						"shop",
+						"spacex",
+						"com"
+					],
+					"path": [
+						"apps",
+						"locksmith",
+						"ping"
+					],
+					"query": [
+						{
+							"key": "customer_id",
+							"value": "5697840971855"
+						},
+						{
+							"key": "customer_id_signature",
+							"value": "bebe35c92ad0a3227032135e400064140c1c72e24cd7501f3eced28828ed74e9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show created address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shop.spacex.com/cart.js?_=1657551802633",
+					"protocol": "https",
+					"host": [
+						"shop",
+						"spacex",
+						"com"
+					],
+					"path": [
+						"cart.js"
+					],
+					"query": [
+						{
+							"key": "_",
+							"value": "1657551802633"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete address",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shop.spacex.com/apps/locksmith/ping?customer_id=5697840971855&customer_id_signature=bebe35c92ad0a3227032135e400064140c1c72e24cd7501f3eced28828ed74e9",
+					"protocol": "https",
+					"host": [
+						"shop",
+						"spacex",
+						"com"
+					],
+					"path": [
+						"apps",
+						"locksmith",
+						"ping"
+					],
+					"query": [
+						{
+							"key": "customer_id",
+							"value": "5697840971855"
+						},
+						{
+							"key": "customer_id_signature",
+							"value": "bebe35c92ad0a3227032135e400064140c1c72e24cd7501f3eced28828ed74e9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
