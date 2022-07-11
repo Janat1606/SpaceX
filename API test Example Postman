@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "e2d558a0-6a84-4e02-8578-35ab5c784987",
+		"name": "04-22 Manual CA-Marketing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21594560"
+	},
+	"item": [
+		{
+			"name": "Create new postal address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 1000b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(1000);",
+							"});",
+							"",
+							"pm.test(\"Body has id\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"id\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": {\n        \"fullName\": {\n            \"firstName\": \"John \",\n            \"lastName\": \"Brown\"\n        },\n        \"company\": \"Brown Inc\",\n        \"taxInfo\": {\n            \"id\": null,\n            \"type\": null\n        },\n        \"addressLine1\": \"1221 21st Str\",\n        \"addressLine2\": \"APT 600\",\n        \"street\": {\n            \"name\": null,\n            \"number\": null\n        },\n        \"city\": \"Queens\",\n        \"country\": \"USA\",\n        \"subdivision\": \"NY\",\n        \"zipCode\": \"11567\",\n        \"phoneNumber\": \"123-456-0987\",\n        \"location\": null\n    },\n    \"setAsDefault\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show specific postal addresses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 3048b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(3048);",
+							"});",
+							"",
+							"pm.test(\"Body has address\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"address\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/ce7b9dc8-07e4-4c9d-bfae-03cef1045b50",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses",
+						"ce7b9dc8-07e4-4c9d-bfae-03cef1045b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show modified postal addresses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 3048b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(3048);",
+							"});",
+							"",
+							"pm.test(\"Body has address\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"address\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/ce7b9dc8-07e4-4c9d-bfae-03cef1045b50",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses",
+						"ce7b9dc8-07e4-4c9d-bfae-03cef1045b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify postal address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 3048b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(3048);",
+							"});",
+							"",
+							"pm.test(\"Response has Body\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"{}\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": {\n        \"id\": \"01ac1330-09cf-426a-9f8c-f525d29070ce\",\n        \"fullName\": {\n            \"firstName\": \"Janette\",\n            \"lastName\": \"Down\"\n        },\n        \"company\": \"Brown company\",\n        \"taxInfo\": {\n            \"id\": null,\n            \"type\": null\n        },\n        \"addressLine1\": \"8411 21st Ave\",\n        \"addressLine2\": \"APT 511\",\n        \"street\": {\n            \"name\": null,\n            \"number\": null\n        },\n        \"city\": \"Brooklyn\",\n        \"country\": \"USA\",\n        \"subdivision\": \"NY\",\n        \"zipCode\": \"11214\",\n        \"phoneNumber\": \"123-456-7890\",\n        \"location\": null\n    },\n    \"setAsDefault\": false,\n    \"fieldMask\": {\n        \"paths\": [\n            \"fullName.firstName\",\n            \"fullName.lastName\",\n            \"company\",\n            \"addressLine1\",\n            \"addressLine2\",\n            \"city\",\n            \"country\",\n            \"subdivision\",\n            \"zipCode\",\n            \"phoneNumber\",\n            \"setAsDefault\"\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/ce7b9dc8-07e4-4c9d-bfae-03cef1045b50",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses",
+						"ce7b9dc8-07e4-4c9d-bfae-03cef1045b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check deleted postal address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 3048b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(3048);",
+							"});",
+							"",
+							"pm.test(\"Response has Message \", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"cant_find_address_by_id\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/ce7b9dc8-07e4-4c9d-bfae-03cef1045b50",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses",
+						"ce7b9dc8-07e4-4c9d-bfae-03cef1045b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete created postal address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 3048b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(3048);",
+							"});",
+							"",
+							"pm.test(\"Response has Body\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"{}\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses/ce7b9dc8-07e4-4c9d-bfae-03cef1045b50",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses",
+						"ce7b9dc8-07e4-4c9d-bfae-03cef1045b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show all postal addresses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response size is less than 3048b\", function () {",
+							"    pm.expect(pm.response.responseSize).to.be.below(3048);",
+							"});",
+							"",
+							"pm.test(\"Body has addresses\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"addresses\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://addresses.wixapps.net/_api/addresses-web/v1/addresses",
+					"protocol": "https",
+					"host": [
+						"addresses",
+						"wixapps",
+						"net"
+					],
+					"path": [
+						"_api",
+						"addresses-web",
+						"v1",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "BYf7HEZ5P_7P4xEZRzbzGvq7WwFUXPill08-Od8LQcE.eyJpbnN0YW5jZUlkIjoiZjQ2Y2Q1MDItZjcyZi00NGY3LTk2MzgtNWRhMWRlYjBiNGU3IiwiYXBwRGVmSWQiOiIxNTA1Yjc3NS1lODg1LWViMWItYjY2NS0xZTQ4NWQ5YmY5MGUiLCJtZXRhU2l0ZUlkIjoiMjhiNzkzZDYtNTQyNC00MDU4LTgwNDktMDI2YTRkYjAyODJmIiwic2lnbkRhdGUiOiIyMDIyLTA2LTI3VDEzOjE3OjExLjYzNVoiLCJ1aWQiOiIwZTM3YzdmYS1hMGFiLTQ4ZjEtODc2Zi1lMjdhOTVlMDAzNGIiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6Ijc1ZTU4NTEwLWU4NzgtNGFhNy04NzQ3LWE2ZmU5ZGYxY2UyYyIsImJpVG9rZW4iOiJkY2RiNDZkNC1hMzBiLTA0YWYtMTY3MS01ZmNiOTMwMDljYzgiLCJzaXRlT3duZXJJZCI6ImY5MTRmMTFjLWFhYjMtNDUyNy04ZDRlLWJhYjc2MjE0M2E2MCIsImV4cGlyYXRpb25EYXRlIjoiMjAyMi0wNi0yN1QxNzoxNzoxMS42MzVaIiwiaGFzVXNlclJvbGUiOmZhbHNlfQ",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
